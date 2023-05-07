@@ -70,11 +70,10 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/save_button"
         android:layout_width="143dp"
         android:layout_height="71dp"
         android:layout_marginStart="36dp"
-        android:onClick="NewSave"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,12 +81,12 @@
         app:layout_constraintVertical_bias="0.863" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/cancel_button"
         android:layout_width="147dp"
         android:layout_height="66dp"
         android:onClick="Cancel"
         android:text="Cancel"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/save_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/save_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
