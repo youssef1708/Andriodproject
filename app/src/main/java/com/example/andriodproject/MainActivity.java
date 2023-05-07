@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Home");
-        Intent i = getIntent();
-        String LandmarkName = i.getStringExtra("Name");
-        String LandmarkInfo = i.getStringExtra("Info");
-        String LandmarkLocation = i.getStringExtra("Location");
+        Intent j = getIntent();
+        String LandmarkName = j.getStringExtra("NewName");
+        String LandmarkInfo = j.getStringExtra("NewInfo");
+        String LandmarkLocation = j.getStringExtra("NewLocation");
         ((TextView)findViewById(R.id.editTextTextPersonName)).setText(LandmarkName);
         ((TextView)findViewById(R.id.editTextTextPersonName2)).setText(LandmarkInfo);
         ((TextView)findViewById(R.id.editTextTextPersonName3)).setText(LandmarkLocation);
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void addLandmark(View v)
     {
-        Intent i = new Intent(this,AddNewLandmarkActivity.class);
+        Intent i = new Intent(this,newAddLandmarkActivity.class);
         startActivity(i);
 
 
