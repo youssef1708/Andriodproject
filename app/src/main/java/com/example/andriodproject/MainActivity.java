@@ -1,34 +1,42 @@
 package com.example.andriodproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
+
+    RecyclerView recyclerView;
+    FloatingActionButton add_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Home");
+        recyclerView = findViewById(R.id.recyclerview);
+        add_button = findViewById(R.id.add_button);
+        add_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                  Intent intent = new Intent(MainActivity.this,newAddLandmarkActivity.class);
+                  startActivity(intent);
+            }
+        });
         Intent j = getIntent();
         String LandmarkName = j.getStringExtra("NewName");
         String LandmarkInfo = j.getStringExtra("NewInfo");
         String LandmarkLocation = j.getStringExtra("NewLocation");
-        ((TextView)findViewById(R.id.editTextTextPersonName)).setText(LandmarkName);
-        ((TextView)findViewById(R.id.editTextTextPersonName2)).setText(LandmarkInfo);
-        ((TextView)findViewById(R.id.editTextTextPersonName3)).setText(LandmarkLocation);
 
     }
 
-    public void addLandmark(View v)
-    {
-        Intent i = new Intent(this,newAddLandmarkActivity.class);
-        startActivity(i);
-
-
-    }
 }
