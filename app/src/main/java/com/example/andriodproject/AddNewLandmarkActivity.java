@@ -19,14 +19,14 @@ public class AddNewLandmarkActivity extends AppCompatActivity {
 
     public void saveNewLandmark(View v)
     {
-        //Intent i = new Intent(this,MainActivity.class);
-        String landmarkName = ((EditText)findViewById(R.id.landmarkName)).getText().toString();
-        //i.putExtra("Name",landmarkName);
-        String landmarkInfo = ((EditText)findViewById(R.id.landmarkInfo)).getText().toString();
-        //i.putExtra("Info",landmarkInfo);
-        String landmarkLocation = ((EditText)findViewById(R.id.landmarkLocation)).getText().toString();
-        //i.putExtra("Location",landmarkLocation);
-        //startActivity(i);
+//        //Intent i = new Intent(this,MainActivity.class);
+//        String landmarkName = ((EditText)findViewById(R.id.landmarkName)).getText().toString();
+//        //i.putExtra("Name",landmarkName);
+//        String landmarkInfo = ((EditText)findViewById(R.id.landmarkInfo)).getText().toString();
+//        //i.putExtra("Info",landmarkInfo);
+//        String landmarkLocation = ((EditText)findViewById(R.id.landmarkLocation)).getText().toString();
+//        //i.putExtra("Location",landmarkLocation);
+//        //startActivity(i);
     }
 
 }

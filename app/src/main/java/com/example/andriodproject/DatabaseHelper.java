@@ -1,9 +1,11 @@
 package com.example.andriodproject;
 
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -62,5 +64,18 @@ public class DatabaseHelper extends SQLiteOpenHelper{
             Toast.makeText(context, "Landmark added successfully.", Toast.LENGTH_SHORT).show();
 
         }
+    }
+
+    Cursor read_all_data(){
+        String query = "SELECT " + column_name  + ", " + column_location + " From " + table_name;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if(db != null){
+            cursor = db.rawQuery(query, null);
+        }
+
+        //Log.d("testttt", cursor.getString(1));
+        return cursor;
     }
 }
