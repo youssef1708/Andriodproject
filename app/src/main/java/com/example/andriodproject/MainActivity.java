@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
                   startActivity(intent);
             }
         });
+        Intent j = getIntent();
+        String LandmarkName = j.getStringExtra("NewName");
+        String LandmarkInfo = j.getStringExtra("NewInfo");
+        String LandmarkLocation = j.getStringExtra("NewLocation");
 
     }
 
