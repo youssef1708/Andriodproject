@@ -23,6 +23,8 @@
                 android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteX="12dp" />
 
             <TextView
@@ -30,23 +32,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginLeft="8dp"
-                android:text="Landmark name"
+                android:layout_marginLeft="10dp"
+                android:text="@string/Landmark_name"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="box"
+                app:layout_constraintTop_toTopOf="box" />
 
             <TextView
                 android:id="@+id/landmark_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="8dp"
-                android:text="Landmark location"
+                android:text="@string/Landmark_location"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toEndOf="@+id/landmark_name"
+                app:layout_constraintStart_toEndOf="@+id/landmark_name"
                 app:layout_constraintTop_toTopOf="@+id/landmark_name"
                 app:layout_constraintVertical_bias="0.941" />
 
