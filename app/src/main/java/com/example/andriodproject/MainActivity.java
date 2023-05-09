@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         display_data();//store data in array
 
-        customAdapter = new CustomAdapter(MainActivity.this, landmark_name,landmark_location,landmark_info);
+        customAdapter = new CustomAdapter(MainActivity.this, landmark_name,landmark_info,landmark_location);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 

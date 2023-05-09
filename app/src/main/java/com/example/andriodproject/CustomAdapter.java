@@ -41,7 +41,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public void onBindViewHolder(@NonNull MyViewHolder holder,int position2) {
 
         holder.landmark_name_txt.setText(String.valueOf(landmark_name.get(position2)));
-        holder.landmark_info_txt.setText(String.valueOf(landmark_info.get(position2)));
+        //holder.landmark_info_txt.setText(String.valueOf(landmark_info.get(position2)));
         holder.landmark_location_txt.setText(String.valueOf(landmark_location.get(position2)));
         holder.mainLayout.setOnClickListener(view -> {
             Intent intent = new Intent(context,viewLandmark.class);
