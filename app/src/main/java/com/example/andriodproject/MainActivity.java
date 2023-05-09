@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton add_button;
 
     DatabaseHelper myDB;
-    ArrayList<String> landmark_name, landmark_location;
+    ArrayList<String> landmark_name, landmark_location,landmark_info;
     CustomAdapter customAdapter;
 
     @Override
@@ -50,10 +50,11 @@ public class MainActivity extends AppCompatActivity {
         myDB = new DatabaseHelper(MainActivity.this);
         landmark_name = new ArrayList<>();
         landmark_location = new ArrayList<>();
+        landmark_info = new ArrayList<>();
 
         display_data();//store data in array
 
-        customAdapter = new CustomAdapter(MainActivity.this, landmark_name,landmark_location);
+        customAdapter = new CustomAdapter(MainActivity.this, landmark_name,landmark_location,landmark_info);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
             while(cursor.moveToNext()){
                 landmark_name.add(cursor.getString(0));
                 landmark_location.add(cursor.getString(1));
+                landmark_info.add(cursor.getString(2));
             }
         }
          // testing

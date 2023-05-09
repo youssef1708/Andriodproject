@@ -12,19 +12,23 @@
         android:theme="@style/Theme.AndriodProject"
         tools:targetApi="31">
         <activity
-            android:name=".newAddLandmarkActivity"
+            android:name=".viewLandmark"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".AddNewLandmarkActivity"
+            android:name=".newAddLandmarkActivity"
             android:exported="false"
-             />
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddNewLandmarkActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

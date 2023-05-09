@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -28,10 +29,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.925"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/landmark_name"
@@ -58,6 +59,14 @@
                 app:layout_constraintStart_toStartOf="@+id/box"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.714" />
+
+            <TextView
+                android:id="@+id/landmark_info"
+                android:layout_width="55dp"
+                android:layout_height="0dp"
+                android:text="@string/Landmark_location"
+                tools:layout_editor_absoluteX="457dp"
+                tools:layout_editor_absoluteY="16dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
