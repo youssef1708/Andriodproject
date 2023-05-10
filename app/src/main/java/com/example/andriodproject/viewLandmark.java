@@ -34,7 +34,7 @@ public class viewLandmark extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 0,0?q="+ Name +""));
+                Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 26.8206, 30.8025?q="+ Name +""));
                 in.setPackage("com.google.android.apps.maps");
                 startActivity(in);
 
