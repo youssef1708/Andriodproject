@@ -62,11 +62,11 @@
 
             <TextView
                 android:id="@+id/landmark_info"
-                android:layout_width="55dp"
-                android:layout_height="0dp"
+                android:layout_width="2dp"
+                android:layout_height="2dp"
                 android:text=""
-                tools:layout_editor_absoluteX="457dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="53dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
