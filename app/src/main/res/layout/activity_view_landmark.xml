@@ -92,6 +92,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
+        app:backgroundTint="@null"
         android:id="@+id/buttonL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

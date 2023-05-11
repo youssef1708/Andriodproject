@@ -8,4 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pink">#FFC0CB</color>
+
+    <color name="dark_moss">#455134</color>
+    <color name="dark_green">#263B26</color>
+    <color name="jasmine">#FAE094</color>
+    <color name="dark_yellow">#e8d089</color>
+
+
 </resources>

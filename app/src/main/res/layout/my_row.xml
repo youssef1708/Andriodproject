@@ -65,8 +65,9 @@
                 android:layout_width="2dp"
                 android:layout_height="2dp"
                 android:text=""
-                tools:layout_editor_absoluteX="140dp"
-                tools:layout_editor_absoluteY="53dp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/box" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
