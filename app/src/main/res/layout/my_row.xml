@@ -36,8 +36,8 @@
 
             <TextView
                 android:id="@+id/landmark_name"
-                android:layout_width="177dp"
-                android:layout_height="33dp"
+                android:layout_width="175dp"
+                android:layout_height="63dp"
                 android:text="@string/Landmark_name"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -50,8 +50,8 @@
 
             <TextView
                 android:id="@+id/landmark_location"
-                android:layout_width="140dp"
-                android:layout_height="28dp"
+                android:layout_width="142dp"
+                android:layout_height="56dp"
                 android:text="@string/Landmark_location"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/box"
